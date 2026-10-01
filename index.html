@@ -122,6 +122,7 @@
     -webkit-overflow-scrolling: touch;
     flex: 1;
     min-width: 0;
+    margin-left: 20px;
   }
   .nav-links::-webkit-scrollbar { display: none; }
   .nav-links a { text-decoration: none; color: var(--muted); transition: color .15s; flex-shrink: 0; }
@@ -149,7 +150,7 @@
     .wrap { padding: 0 20px; }
     .nav-inner { padding: 14px 20px; gap: 10px; }
     .wordmark { font-size: 16px; }
-    .nav-links { gap: 14px; font-size: 13px; }
+    .nav-links { gap: 14px; font-size: 13px; margin-left: 10px; }
   }
 
   /* ---------- hero ---------- */
@@ -205,6 +206,22 @@
   .consume-items:last-child { margin-bottom: 0; }
   .consume-items a { color: var(--accent); text-decoration: none; }
   .consume-items a:hover { text-decoration: underline; }
+
+  .also-love-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .also-love-list li {
+    font-size: 14.5px;
+    padding: 6px 14px;
+    border-radius: 100px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
 
   /* ---------- work ---------- */
   .role {
@@ -304,7 +321,7 @@
     <p class="body-text">I'm Jen, a candid and driven people leader with a deep belief that the best companies are built on the strength of their teams.</p>
     <p class="body-text">Based in NYC, I currently work at Andreessen Horowitz (a16z), where I help portfolio companies think through crunchy people topics at every stage of growth.</p>
     <p class="body-text">My career has been spent at the intersection of people, strategy, and operations, always building, working with founders and leaders at early stage companies and in fast growing industries.</p>
-    <p class="body-text">I'm forever curious, currently obsessed with building with AI, and love being outside, having grown up in Australia.</p>
+    <p class="body-text">I'm forever curious, always open to new ideas and currently obsessed with building with AI.</p>
   </section>
 
   <section id="work">
@@ -369,7 +386,7 @@
         <span class="name">Some of my favorite people reads</span><span class="arrow">↗</span>
       </a>
     </div>
-    <p class="body-text" style="margin-top:16px;"><a href="https://github.com/therealjmum" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">All projects on GitHub ↗</a></p>
+    <p class="body-text" style="margin-top:16px;"><a href="https://github.com/therealjmum" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">More on GitHub here ↗</a></p>
   </section>
 
   <section id="consuming">
@@ -377,19 +394,25 @@
 
     <div class="consume-group">
       <p class="consume-label">Podcasts</p>
-      <p class="consume-items">Current rotation: Lenny's (always), David Senra, Dwarkesh, How I AI, Invest Like the Best, True Spies, Giggly Squad</p>
+      <p class="consume-items"><strong>Current rotation:</strong> Lenny's (always), David Senra, Dwarkesh, How I AI, Invest Like the Best, True Spies, Giggly Squad</p>
     </div>
 
     <div class="consume-group">
       <p class="consume-label">Books</p>
-      <p class="consume-items">All-time: Radical Candor, The Power of Moments, Hard Thing About Hard Things, Trillion Dollar Coach, Ride of a Lifetime, High Output Management, The Inner Game of Tennis, Legacy</p>
-      <p class="consume-items">Recent: Skunk Works, Pachinko</p>
+      <p class="consume-items"><strong>All-time:</strong> Radical Candor, The Power of Moments, Hard Thing About Hard Things, Trillion Dollar Coach, Ride of a Lifetime, High Output Management, The Inner Game of Tennis, Legacy, An Astronaut's Guide to Life on Earth</p>
+      <p class="consume-items" style="margin-top:14px;"><strong>Recent:</strong> Skunk Works, Pachinko</p>
       <p class="consume-items"><a href="https://therealjmum.github.io/people-resources/" target="_blank" rel="noopener">Full reading list ↗</a></p>
     </div>
 
-    <div class="consume-group">
-      <p class="consume-label">Recent obsession</p>
-      <p class="consume-items">Watercoloring</p>
+    <div class="consume-group" style="margin-top:12px;">
+      <p class="consume-label">Also love</p>
+      <ul class="also-love-list">
+        <li>Walking cities</li>
+        <li>UFC</li>
+        <li>Any high intensity exercise</li>
+        <li>Yoga</li>
+        <li>Watercoloring</li>
+      </ul>
     </div>
   </section>
 
